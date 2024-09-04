@@ -1,8 +1,9 @@
 import React from 'react';
-import { pic_1 } from '../assets';
 import { IoLocationOutline } from 'react-icons/io5';
 import { banner } from '../data';
 import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomeBanner = () => {
   const settings = {
@@ -17,7 +18,7 @@ const HomeBanner = () => {
 
   return (
     <div className='relative h-screen w-full overflow-hidden'>
-      <Slider {...settings} className='h-full'>
+      <Slider {...settings} className='h-full banner-slider'>
         {banner.map((item) => (
           <div key={item.id} className='relative h-screen w-full'>
             <img src={item.img} alt='banner' className='absolute inset-0 w-full h-full object-cover' />

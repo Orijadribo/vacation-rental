@@ -141,8 +141,8 @@ export const properties = [
     amenities: ['Safari Tours', 'Wildlife Viewing', 'Free Breakfast'],
     price: 150,
     image: [
-      'https://images.pexels.com/photos/1170524/pexels-photo-1170524.jpeg',
-      'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
+      'https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg',
+      'https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg',
     ],
   },
 ];
