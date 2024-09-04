@@ -18,9 +18,11 @@ const PropertiesList = () => {
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-[14px]'>
           {properties.slice(0, 3).map((property) => (
-            <div key={property.id}>
-              <List property={property} />
-            </div>
+            <Link to={`/properties/${property.id}`} key={property.id}>
+              <div>
+                <List property={property} />
+              </div>
+            </Link>
           ))}
         </div>
         <Link to='/properties'>

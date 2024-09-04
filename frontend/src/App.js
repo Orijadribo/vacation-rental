@@ -6,8 +6,8 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import PropertyDetails from './components/PropertyDetails';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';    
-
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path='/properties/:id' element={<PropertyDetails />} />
         </Routes>
         <Footer />
       </div>
