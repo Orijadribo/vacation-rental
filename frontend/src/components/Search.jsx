@@ -9,35 +9,34 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 
 const Search = () => {
   return (
-    <div className='-mt-40 z-20'>
-      <div className='flex flex-col items-center justify-center  '>
-        <div className='flex flex-col items-center justify-center bg-white w-fit rounded-full shadow-lg p-5'>
-          <div className='flex items-center justify-center gap-10 border-2 border-gray-300 rounded-full p-2'>
+    <div className='absolute left-0 right-0 bottom-10 z-20'>
+      <div className='container max-w-screen-xl mx-auto px-4'>
+        <div className='bg-white rounded-full shadow-lg p-4 md:p-5'>
+          <div className='flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6'>
             <div className='flex items-center justify-center gap-2'>
               <IoLocationOutline size={24} />
-              <p>Select a location</p>
+              <p className='text-sm md:text-base'>Select a location</p>
             </div>
-            <div className='flex items-center justify-center w-[2px] h-[30px] rounded-full bg-gray-300'></div>
-            <div className='flex items-center justify-center gap-5'>
+            <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
+            <div className='flex items-center justify-center gap-2 md:gap-4'>
               <IoCalendarOutline size={24} />
-              <h1>Check-in</h1>
+              <h1 className='text-sm md:text-base'>Check-in</h1>
               <IoArrowForward size={24} />
-              <h1>Check-out</h1>
+              <h1 className='text-sm md:text-base'>Check-out</h1>
             </div>
-            <div className='flex items-center justify-center w-[2px] h-[30px] rounded-full bg-gray-300'></div>
-            <div className='flex items-center justify-center gap-5'>
+            <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
+            <div className='flex items-center justify-center gap-2 md:gap-4'>
               <IoPeopleOutline size={24} />
-              <p>Guests</p>
+              <p className='text-sm md:text-base'>Guests</p>
               <div className='flex items-center justify-center gap-3'>
-                <FiMinus />
+                <FiMinus className='cursor-pointer' />
                 <p>1</p>
-                <FiPlus />
+                <FiPlus className='cursor-pointer' />
               </div>
             </div>
-            <div className='flex items-center justify-center w-[2px] h-[30px] rounded-full bg-gray-300'></div>
-            <div className='flex items-center justify-center gap-2'>
-              <button className='bg-slate-500 text-white px-10 py-2 rounded-full'>Search</button>
-            </div>
+            <button className='bg-slate-500 text-white px-6 md:px-10 py-2 rounded-full hover:bg-slate-600 transition-colors'>
+              Search
+            </button>
           </div>
         </div>
       </div>
@@ -46,3 +45,4 @@ const Search = () => {
 };
 
 export default Search;
+
