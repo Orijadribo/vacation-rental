@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  IoArrowForward,
+  IoArrowForwardOutline,
   IoCalendarOutline,
   IoLocationOutline,
   IoPeopleOutline,
@@ -21,14 +21,14 @@ const Search = () => {
             <div className='flex items-center justify-center gap-2 md:gap-4'>
               <IoCalendarOutline size={24} />
               <h1 className='text-sm md:text-base'>Check-in</h1>
-              <IoArrowForward size={24} />
+              <IoArrowForwardOutline size={24} />
               <h1 className='text-sm md:text-base'>Check-out</h1>
             </div>
             <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
             <div className='flex items-center justify-center gap-2 md:gap-4'>
               <IoPeopleOutline size={24} />
               <p className='text-sm md:text-base'>Guests</p>
-              <div className='flex items-center justify-center gap-3'>
+              <div className='flex items-center justify-center gap-5'>
                 <FiMinus className='cursor-pointer' />
                 <p>1</p>
                 <FiPlus className='cursor-pointer' />
