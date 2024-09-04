@@ -20,7 +20,7 @@ const NavBar = () => {
   }, [scrolled]);
 
   return (
-    <div className={`fixed w-full transition-colors duration-300 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <div className={`fixed w-full transition-colors duration-300 z-50 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className='flex justify-between items-center max-w-screen-xl mx-auto h-16'>
         <div className='text-2xl font-bold'>Logo</div>
         <div className='flex justify-between items-center gap-10'>
