@@ -112,25 +112,29 @@ export const properties = [
 ];
 
 export const categories = [
-    {
-      id: 1,
+  {
+    id: 1,
     location: 'Kampala',
-    image: 'https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg',
+    image:
+      'https://www.nkuringosafaris.com/wp-content/uploads/2019/03/kampala-jpg.webp',
   },
   {
     id: 2,
     location: 'Entebbe',
-    image: 'https://images.pexels.com/photos/2345678/pexels-photo-2345678.jpeg',
+    image:
+      'https://imgix.brilliant-uganda.com/EU-Entebbe-Lake-Victoria.JPG?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1880&h=740&q=30',
   },
   {
     id: 3,
     location: 'Jinja',
-    image: 'https://images.pexels.com/photos/3456789/pexels-photo-3456789.jpeg',
+    image:
+      'https://www.ugandaholidayguide.com/wp-content/uploads/2022/03/Jinja-bridge.jpg',
   },
   {
     id: 4,
     location: 'Mbarara',
-    image: 'https://images.pexels.com/photos/4567890/pexels-photo-4567890.jpeg',
+    image:
+      'https://amityug.com/wp-content/uploads/2023/03/Welcome-to-Mbarara.-Fredrick-Mugira-1-scaled-1.jpg',
   },
   {
     id: 5,
@@ -163,4 +167,3 @@ export const categories = [
     image: 'https://images.pexels.com/photos/0123456/pexels-photo-0123456.jpeg',
   },
 ];
-
