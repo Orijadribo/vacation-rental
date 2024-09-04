@@ -1,3 +1,38 @@
+import { pic_1, pic_2, pic_3, pic_4, pic_5 } from '../assets';
+
+export const banner = [
+  {
+    id: 1,
+    img: pic_1,
+    location: 'Muyenga TankHill',
+    city: 'Kampala',
+  },
+  {
+    id: 2,
+    img: pic_2,
+    location: 'Kyanja',
+    city: 'Kampala',
+  },
+  {
+    id: 3,
+    img: pic_3,
+    location: 'Source of the Nile',
+    city: 'Jinja',
+  },
+  {
+    id: 4,
+    img: pic_4,
+    location: 'Kichwamba',
+    city: 'Mbarara',
+  },
+  {
+    id: 5,
+    img: pic_5,
+    location: 'Katabi',
+    city: 'Entebbe',
+  },
+];
+
 export const properties = [
   {
     id: 1,
@@ -165,6 +200,52 @@ export const categories = [
   {
     id: 10,
     location: 'Lira',
-    image: 'https://images.pexels.com/photos/0123456/pexels-photo-0123456.jpeg',
+    image:
+      'ht  tps://images.pexels.com/photos/0123456/pexels-photo-0123456.jpeg',
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    name: 'Alice M.',
+    rating: 5,
+    text: "Absolutely loved my stay! The location was perfect, and the amenities were top-notch. I can't wait to come back!",
+    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+  },
+  {
+    id: 2,
+    name: 'John K.',
+    rating: 4,
+    text: 'Great experience overall. The property was clean and well-maintained. A bit pricey, but worth it for the views.',
+    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+  },
+  {
+    id: 3,
+    name: 'Grace T.',
+    rating: 5,
+    text: 'This place exceeded all my expectations! The staff was incredibly helpful, and the surroundings were breathtaking. Highly recommend!',
+    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  },
+  {
+    id: 4,
+    name: 'John Doe',
+    rating: 5,
+    text: 'Exceptional service! They helped me find my dream home in no time.',
+    image: 'https://randomuser.me/api/portraits/men/1.jpg',
+  },
+  {
+    id: 5,
+    name: 'Jane Smith',
+    rating: 4,
+    text: 'Very professional team. The whole process was smooth and stress-free.',
+    image: 'https://randomuser.me/api/portraits/women/2.jpg',
+  },
+  {
+    id: 6,
+    name: 'Mike Johnson',
+    rating: 5,
+    text: "I couldn't be happier with my new property. Thank you for your dedication!",
+    image: 'https://randomuser.me/api/portraits/men/3.jpg',
   },
 ];
