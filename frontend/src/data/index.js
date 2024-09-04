@@ -17,6 +17,7 @@ export const properties = [
     amenities: ['River View', 'Boat Ride', 'Free Breakfast'],
     price: 90,
     image: [
+      'https://a0.muscache.com/im/pictures/prohost-api/Hosting-49139236/original/620d1a4f-d224-4c79-b259-044d82b49ca8.jpeg?im_w=720',
       'https://images.pexels.com/photos/2102437/pexels-photo-2102437.jpeg',
       'https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg',
     ],
