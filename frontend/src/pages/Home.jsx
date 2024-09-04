@@ -7,12 +7,12 @@ import HomeBanner from '../components/HomeBanner';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-gray-100'>
       <HomeBanner />
       <Search />
       <Properties />
       <Locations />
-      <Reviews/>
+      <Reviews />
     </div>
   );
 };
