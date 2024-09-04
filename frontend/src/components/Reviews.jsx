@@ -31,6 +31,7 @@ const Reviews = () => {
                     src={review.image}
                     alt={review.name}
                     className='w-16 h-16 rounded-full mr-4'
+                    loading='lazy'
                   />
                   <div>
                     <h3 className='text-xl font-semibold'>{review.name}</h3>

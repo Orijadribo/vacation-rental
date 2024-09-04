@@ -35,6 +35,7 @@ const Locations = () => {
                 src={category.image}
                 alt={category.location}
                 className='w-80 h-80 object-cover rounded-lg hover:opacity-50'
+                loading='lazy'
               />
             </div>
           ))}
