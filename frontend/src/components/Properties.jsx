@@ -6,6 +6,7 @@ import {
   IoPricetagOutline,
 } from 'react-icons/io5';
 import { CiViewList } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 
 const Properties = () => {
   return (
@@ -26,7 +27,8 @@ const Properties = () => {
               <img
                 src={property.image[0]}
                 alt={property.location}
-                className='rounded-lg'
+                className='rounded-lg cursor-pointer hover:opacity-80 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg'
+                loading='lazy'
               />
               <div className=' mt-5'>
                 <div className='flex items-center gap-2 text-lg font-bold'>
@@ -49,9 +51,11 @@ const Properties = () => {
             </div>
           ))}
         </div>
-        <div className='text-2xl font-bold mt-10 p-5 px-10 rounded-lg bg-slate-200 hover:bg-slate-600 hover:text-white cursor-pointer'>
-          Explore More ...
-        </div>
+        <Link to='/properties'>
+          <div className='text-2xl font-bold mt-10 p-5 px-10 rounded-lg bg-slate-200 hover:bg-slate-600 hover:text-white cursor-pointer'>
+            Explore More ...
+          </div>
+        </Link>
       </div>
     </div>
   );
