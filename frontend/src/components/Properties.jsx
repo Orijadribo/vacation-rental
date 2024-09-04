@@ -9,7 +9,7 @@ import { CiViewList } from 'react-icons/ci';
 
 const Properties = () => {
   return (
-    <div className='mt-20 max-w-screen-xl mx-auto px-10'>
+    <div className='mt-5 max-w-screen-xl mx-auto px-10'>
       <div className='flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center gap-5 my-20 w-full'>
           <h1 className='text-6xl font-thin text-center'>
