@@ -3,3 +3,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slider-container .slick-prev,
+.slider-container .slick-next {
+  z-index: 1;
+}
+
+.slider-container .slick-prev {
+  left: 10px;
+}
+
+.slider-container .slick-next {
+  right: 10px;
+}
+
+.slider-container .slick-prev:before,
+.slider-container .slick-next:before {
+  font-size: 20px;
+  opacity: 0.75;
+}
+
+.slider-container .slick-dots {
+  bottom: 10px;
+}
+
+.slider-container .slick-dots li button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.banner-slider .slick-prev,
+.banner-slider .slick-next {
+  z-index: 1;
+}
+
+.banner-slider .slick-prev {
+  left: 20px;
+}
+
+.banner-slider .slick-next {
+  right: 20px;
+}
+
+.banner-slider .slick-prev:before,
+.banner-slider .slick-next:before {
+  font-size: 30px;
+  opacity: 0.75;
+}
+
+.banner-slider .slick-dots {
+  bottom: 20px;
+  z-index: 1;
+}
+
+.banner-slider .slick-dots li button:before {
+  color: white;
+  opacity: 0.75;
+  font-size: 12px;
+}
+
+.banner-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
