@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from '../components/Search';
 import PropertiesList from '../components/PropertiesList';
-import Locations from '../components/Locations';
+import PropertyLocations from '../components/PropertyLocations';
 import Reviews from '../components/Reviews';
 import HomeBanner from '../components/HomeBanner';
 
@@ -11,7 +11,7 @@ const Home = () => {
       <HomeBanner />
       <Search />
       <PropertiesList />
-      <Locations />
+      <PropertyLocations />
       <Reviews />
     </div>
   );

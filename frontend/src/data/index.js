@@ -147,7 +147,7 @@ export const properties = [
   },
 ];
 
-export const categories = [
+export const locations = [
   {
     id: 1,
     location: 'Kampala',
