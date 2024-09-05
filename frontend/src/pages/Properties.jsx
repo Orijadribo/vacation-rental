@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Properties = () => {
   return (
-    <div className=''>
+    <div className='bg-gray-100'>
       <Banner />
       <div className='mx-auto max-w-screen-xl px-10'>
         <div className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-[14px]'>

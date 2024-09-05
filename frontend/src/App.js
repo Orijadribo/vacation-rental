@@ -25,7 +25,7 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/properties/:id' element={<PropertyDetails />} />
           <Route path='/locations' element={<Locations />} />
-          <Route path='/locations/:location' element={<Location />} />
+          <Route path='/locations/:locationId' element={<Location />} />
         </Routes>
         <Footer />
       </div>

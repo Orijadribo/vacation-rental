@@ -4,14 +4,13 @@ import { locations, properties } from '../data';
 
 const Locations = () => {
   return (
-    <div className='container mx-auto max-w-screen-xl px-10 py-8'>
+    <div className='container mx-auto max-w-screen-xl px-10 py-8 bg-gray-100'>
       <h2 className='text-6xl font-thin mt-20 mb-10'>Available Locations</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
         {locations.map((location, index) => (
           <Link
             key={index}
             to={`/locations/${location.location.toLowerCase()}`}
-            className='bg-white rounded-lg'
           >
             <div className='text-2xl font-thin text-gray-900'>
               {location.location}
