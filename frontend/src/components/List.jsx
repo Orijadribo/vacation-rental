@@ -19,11 +19,11 @@ const List = ({ property }) => {
   };
     
   return (
-    <div className="property-card">
-      <div className="slider-container">
+    <div className='property-card'>
+      <div className='slider-container'>
         <Slider {...settings}>
           {property.image.map((image, index) => (
-            <div key={index} className="relative">
+            <div key={index} className='relative'>
               <img
                 src={image}
                 alt={`${property.location} - Image ${index + 1}`}
@@ -49,7 +49,9 @@ const List = ({ property }) => {
         </div>
         <div className='flex items-center gap-2 font-bold'>
           <IoPricetagOutline />
-          <p>Shs {property.price} night</p>
+          <p>
+            Shs {new Intl.NumberFormat('en-US').format(property.price)} per night
+          </p>
         </div>
       </div>
     </div>

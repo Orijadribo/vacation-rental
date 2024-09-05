@@ -39,7 +39,7 @@ export const properties = [
     location: 'Kampala',
     categories: ['City', 'Luxury'],
     amenities: ['WiFi', 'Pool', 'Gym', '24/7 Security'],
-    price: 120,
+    price: 120000,
     image: [
       'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg',
       'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg',
@@ -50,7 +50,7 @@ export const properties = [
     location: 'Jinja',
     categories: ['Adventure', 'Riverfront'],
     amenities: ['River View', 'Boat Ride', 'Free Breakfast'],
-    price: 90,
+    price: 90000,
     image: [
       'https://a0.muscache.com/im/pictures/prohost-api/Hosting-49139236/original/620d1a4f-d224-4c79-b259-044d82b49ca8.jpeg?im_w=720',
       'https://images.pexels.com/photos/2102437/pexels-photo-2102437.jpeg',
@@ -62,7 +62,7 @@ export const properties = [
     location: 'Entebbe',
     categories: ['Beach', 'Relaxation'],
     amenities: ['Beach Access', 'WiFi', 'Airport Shuttle'],
-    price: 110,
+    price: 110000,
     image: [
       'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg',
       'https://images.pexels.com/photos/1533728/pexels-photo-1533728.jpeg',
@@ -73,7 +73,7 @@ export const properties = [
     location: 'Fort Portal',
     categories: ['Nature', 'Mountain'],
     amenities: ['Mountain View', 'Hiking Trails', 'Fireplace'],
-    price: 100,
+    price: 100000,
     image: [
       'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg',
       'https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg',
@@ -84,7 +84,7 @@ export const properties = [
     location: 'Mbarara',
     categories: ['Countryside', 'Farm Stay'],
     amenities: ['Farm Experience', 'WiFi', 'Pet Friendly'],
-    price: 80,
+    price: 80000,
     image: [
       'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg',
       'https://images.pexels.com/photos/368309/pexels-photo-368309.jpeg',
@@ -95,7 +95,7 @@ export const properties = [
     location: 'Gulu',
     categories: ['Cultural', 'Urban'],
     amenities: ['City Tours', 'WiFi', 'Free Parking'],
-    price: 95,
+    price: 95000,
     image: [
       'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
       'https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg',
@@ -106,7 +106,7 @@ export const properties = [
     location: 'Kabale',
     categories: ['Lakeside', 'Scenic'],
     amenities: ['Lake View', 'Boat Rentals', 'BBQ Facilities'],
-    price: 105,
+    price: 105000,
     image: [
       'https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg',
       'https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg',
@@ -117,7 +117,7 @@ export const properties = [
     location: 'Kisoro',
     categories: ['Mountain', 'Adventure'],
     amenities: ['Gorilla Trekking', 'Mountain Views', 'Fireplace'],
-    price: 130,
+    price: 130000,
     image: [
       'https://images.pexels.com/photos/356793/pexels-photo-356793.jpeg',
       'https://images.pexels.com/photos/302131/pexels-photo-302131.jpeg',
@@ -128,7 +128,7 @@ export const properties = [
     location: 'Mbale',
     categories: ['Nature', 'Waterfall'],
     amenities: ['Waterfall Access', 'WiFi', 'Hiking Trails'],
-    price: 85,
+    price: 85000,
     image: [
       'https://images.pexels.com/photos/434346/pexels-photo-434346.jpeg',
       'https://images.pexels.com/photos/163491/mist-nature-tree-trees-163491.jpeg',
@@ -139,7 +139,7 @@ export const properties = [
     location: 'Kasese',
     categories: ['National Park', 'Safari'],
     amenities: ['Safari Tours', 'Wildlife Viewing', 'Free Breakfast'],
-    price: 150,
+    price: 150000,
     image: [
       'https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg',
       'https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg',

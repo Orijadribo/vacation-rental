@@ -69,3 +69,41 @@
 .banner-slider .slick-dots li.slick-active button:before {
   opacity: 1;
 }
+
+.property-slider .slick-prev,
+.property-slider .slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.property-slider .slick-prev {
+  left: 20px;
+}
+
+.property-slider .slick-next {
+  right: 20px;
+}
+
+.property-slider .slick-prev:before,
+.property-slider .slick-next:before {
+  font-size: 25px;
+  opacity: 0.75;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.property-slider .slick-dots {
+  bottom: 20px;
+}
+
+.property-slider .slick-dots li button:before {
+  color: white;
+  opacity: 0.75;
+  font-size: 10px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.property-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
