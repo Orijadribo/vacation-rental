@@ -21,7 +21,11 @@ const HomeBanner = () => {
       <Slider {...settings} className='h-full banner-slider'>
         {banner.map((item) => (
           <div key={item.id} className='relative h-screen w-full'>
-            <img src={item.img} alt='banner' className='absolute inset-0 w-full h-full object-cover' />
+            <img
+              src={item.img}
+              alt='banner'
+              className='absolute inset-0 w-full h-full object-cover'
+            />
             <div className='absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center'>
               <div className='flex flex-col max-w-screen-xl mx-auto px-4 text-center'>
                 <h3 className='text-3xl md:text-[50px] font-thin text-white leading-tight md:leading-[60px] tracking-wide'>
@@ -33,11 +37,13 @@ const HomeBanner = () => {
                 <p className='text-lg md:text-[20px] text-white leading-normal md:leading-[60px] tracking-wider mt-4'>
                   Find the perfect getaway in beautiful locations.
                 </p>
-                <div className='flex items-center justify-center gap-2 text-white text-sm mt-8 md:mt-20'>
+                <div className='flex items-center justify-center gap-2 text-white text-[16px] md:text-sm mt-8 md:mt-20'>
                   <IoLocationOutline />
                   <p>{item.location}</p>
-                  <div className='hidden md:flex items-center justify-center w-[2px] h-[20px] bg-white rounded-full'></div>
-                  <div>{item.city}</div>
+                  <div className='flex items-center justify-center w-[2px] h-[20px] bg-white rounded-full'></div>
+                  <div>
+                    <p className='font-bold md:text-[16px]'>{item.city}</p>
+                  </div>
                 </div>
               </div>
             </div>
