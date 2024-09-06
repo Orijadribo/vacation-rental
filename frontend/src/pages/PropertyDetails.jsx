@@ -3,10 +3,8 @@ import { useParams } from 'react-router-dom';
 import Slider from 'react-slick';
 import {
   IoLocationOutline,
-  IoWifiOutline,
   IoPricetagOutline,
 } from 'react-icons/io5';
-import { CiViewList } from 'react-icons/ci';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { properties } from '../data';

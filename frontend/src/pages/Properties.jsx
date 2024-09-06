@@ -9,7 +9,7 @@ const Properties = () => {
     <div className='bg-gray-100'>
       <Banner />
       <div className='mx-auto max-w-screen-xl px-10'>
-        <div className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-[14px]'>
+        <div className='py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-[14px]'>
           {properties.map((property) => (
             <Link to={`/properties/${property.id}`} key={property.id}>
               <div>
