@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -72,7 +73,7 @@ const Footer = () => {
                 to='/'
                 className='text-gray-400 hover:text-white transition duration-300'
               >
-                <FaTwitter size={24} />
+                <FaXTwitter size={24} />
               </Link>
               <Link
                 to='/'
