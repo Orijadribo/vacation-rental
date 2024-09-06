@@ -126,7 +126,7 @@ const PropertyDetails = () => {
             <h3 className='text-lg font-semibold mb-4'>Book this property</h3>
             <div className='flex items-center gap-5 mb-4 border-b pb-4'>
               <div className=''>
-                <div className='hidden md:flex items-center justify-center gap-2 md:gap-4'>
+                <div className='flex items-center justify-center gap-2 md:gap-4'>
                   <IoCalendarOutline size={24} />
                   <div className='w-[120px]'>
                     <DatePicker
