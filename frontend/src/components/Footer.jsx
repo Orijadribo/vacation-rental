@@ -91,7 +91,8 @@ const Footer = () => {
         </div>
         <div className='border-t border-gray-800 py-4 text-center'>
           <p className='text-gray-400'>
-            &copy; 2023 Real Estate Company. All rights reserved.
+            &copy; {new Date().getFullYear()} Real Estate Company. All rights
+            reserved.
           </p>
         </div>
       </div>
