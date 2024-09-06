@@ -6,9 +6,13 @@ import {
   IoPeopleOutline,
 } from 'react-icons/io5';
 import { FiMinus, FiPlus } from 'react-icons/fi';
+import DatePicker from 'react-datepicker';
 
 const Search = () => {
   const [guests, setGuests] = useState(1);
+  const [days, setDays] = useState(1);
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
 
   const subtractGuest = () => {
     if (guests > 1) {
@@ -30,11 +34,32 @@ const Search = () => {
               <p className='text-sm md:text-base'>Select a location</p>
             </div>
             <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
-            <div className='hidden md:flex items-center justify-center gap-2 md:gap-4'>
+            <div className='hidden md:flex items-center justify-center md:gap-4'>
               <IoCalendarOutline size={24} />
-              <h1 className='text-sm md:text-base'>Check-in</h1>
+              <div className='w-[100px]'>
+                <DatePicker
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  selectsStart
+                  startDate={startDate}
+                  endDate={endDate}
+                  className='p-2 rounded-lg bg-transparent w-full'
+                  placeholderText='Check-in'
+                />
+              </div>
               <IoArrowForwardOutline size={24} />
-              <h1 className='text-sm md:text-base'>Check-out</h1>
+              <div className='w-[120px]'>
+                <DatePicker
+                  selected={endDate}
+                  onChange={(date) => setEndDate(date)}
+                  selectsEnd
+                  startDate={startDate}
+                  endDate={endDate}
+                  minDate={startDate}
+                  className='p-2 rounded-lg bg-transparent w-full'
+                  placeholderText='Check-out'
+                />
+              </div>
             </div>
             <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
             <div className='hidden md:flex items-center justify-center gap-2 md:gap-4'>
