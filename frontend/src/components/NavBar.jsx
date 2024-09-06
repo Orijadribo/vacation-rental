@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = ({ setIsLogin }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -58,12 +58,16 @@ const NavBar = () => {
                     ? 'border-white hover:border-2 hover:border-slate-500'
                     : 'border-slate-500 hover:border-2 hover:border-white'
                 } px-4 py-2 rounded-md`}
+                onClick={() => setIsLogin(true)}
               >
                 Login
               </div>
             </Link>
             <Link to='/signup'>
-              <div className='bg-slate-500 text-white px-4 py-2 rounded-md'>
+              <div
+                className='bg-slate-500 text-white px-4 py-2 rounded-md'
+                onClick={() => setIsLogin(false)}
+              >
                 Sign Up
               </div>
             </Link>
