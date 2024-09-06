@@ -37,7 +37,7 @@ const HomeBanner = () => {
                 <p className='text-lg md:text-[20px] text-white leading-normal md:leading-[60px] tracking-wider mt-4'>
                   Find the perfect getaway in beautiful locations.
                 </p>
-                <div className='flex items-center justify-center gap-2 text-white text-[16px] md:text-sm mt-8 md:mt-20'>
+                <div className='flex items-center justify-center gap-2 text-white text-[16px] lg:text-sm mt-8 md:mt-20'>
                   <IoLocationOutline />
                   <p>{item.location}</p>
                   <div className='flex items-center justify-center w-[2px] h-[20px] bg-white rounded-full'></div>

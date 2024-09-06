@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons for hamburger and close
+import { FaTimes } from 'react-icons/fa';
+import { HiBars3 } from 'react-icons/hi2';
 
 const NavBar = ({ setIsLogin }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,7 @@ const NavBar = ({ setIsLogin }) => {
     >
       <div className='flex justify-between items-center max-w-screen-xl mx-auto h-16 px-10'>
         <div className='text-2xl font-bold text-black'>Logo</div>
-        <div className='hidden md:flex justify-between items-center gap-10'>
+        <div className='hidden lg:flex justify-between items-center gap-10'>
           <div className='flex items-center justify-center space-x-4'>
             {/* Navigation Links */}
             {['home', 'about us', 'properties', 'contact us'].map((page) => (
@@ -84,9 +85,9 @@ const NavBar = ({ setIsLogin }) => {
           </div>
         </div>
         {/* Hamburger Icon */}
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
           <button onClick={toggleMobileMenu}>
-            {!isMobileMenuOpen && <FaBars size={24} />}
+            {!isMobileMenuOpen && <HiBars3 size={28} />}
           </button>
         </div>
       </div>
@@ -140,7 +141,7 @@ const NavBar = ({ setIsLogin }) => {
             </div>
           </div>
           <div
-            className='flex items-center justify-center flex-1 md:hidden '
+            className='flex items-center justify-center flex-1 lg:hidden '
             onClick={toggleMobileMenu}
           >
             <button className='border-2 border-white p-4 rounded-full text-white hover:bg-white hover:text-black'>

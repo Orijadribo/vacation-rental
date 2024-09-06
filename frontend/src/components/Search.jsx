@@ -26,7 +26,7 @@ const Search = () => {
   };
 
   return (
-    <div className='absolute left-0 right-0 bottom-24 md:bottom-14 z-20'>
+    <div className='absolute left-0 right-0 bottom-24 md:bottom-40 lg:bottom-14 z-20'>
       <div className='container max-w-screen-xl mx-auto px-4'>
         <div className='bg-white rounded-full shadow-lg p-1 md:p-2 w-fit mx-auto'>
           <div className='flex flex-row items-center justify-between gap-2'>
@@ -38,7 +38,7 @@ const Search = () => {
                 className='text-sm md:text-base px-2 py-1 focus:border-none outline-none bg-transparent rounded-full'
               >
                 <option value='' disabled>
-                  <span className='hidden md:flex'>Select A </span>Location
+                  Select A Location
                 </option>
                 {locations.map((location, index) => (
                   <option key={index} value={location.location}>
@@ -47,8 +47,8 @@ const Search = () => {
                 ))}
               </select>
             </div>
-            <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
-            <div className='px-4 py-2 hidden md:flex items-center justify-center md:gap-4 hover:bg-slate-200 rounded-full'>
+            <div className='hidden lg:block w-[2px] h-[30px] bg-gray-300'></div>
+            <div className='px-4 py-2 hidden lg:flex items-center justify-center md:gap-4 hover:bg-slate-200 rounded-full'>
               <IoCalendarOutline size={24} />
               <div className='w-[100px]'>
                 <DatePicker
@@ -75,8 +75,8 @@ const Search = () => {
                 />
               </div>
             </div>
-            <div className='hidden md:block w-[2px] h-[30px] bg-gray-300'></div>
-            <div className='px-4 py-1 hidden md:flex items-center justify-center gap-2 md:gap-4 hover:bg-slate-200 rounded-full'>
+            <div className='hidden lg:block w-[2px] h-[30px] bg-gray-300'></div>
+            <div className='px-4 py-1 hidden lg:flex items-center justify-center gap-2 md:gap-4 hover:bg-slate-200 rounded-full'>
               <IoPeopleOutline size={24} />
               <p className='text-sm md:text-base'>Guests</p>
               <div className='flex items-center justify-center gap-5'>
