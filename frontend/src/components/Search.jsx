@@ -26,11 +26,11 @@ const Search = () => {
   };
 
   return (
-    <div className='absolute left-0 right-0 bottom-14 z-20'>
+    <div className='absolute left-0 right-0 bottom-24 md:bottom-14 z-20'>
       <div className='container max-w-screen-xl mx-auto px-4'>
-        <div className='bg-white rounded-full shadow-lg p-4 md:p-3 w-fit mx-auto'>
-          <div className='flex flex-col md:flex-row items-center justify-between gap-2'>
-            <div className='px-4 py-2 hidden md:flex items-center justify-center gap-2 hover:bg-slate-200 rounded-full'>
+        <div className='bg-white rounded-full shadow-lg p-1 md:p-2 w-fit mx-auto'>
+          <div className='flex flex-row items-center justify-between gap-2'>
+            <div className='px-4 py-2 flex items-center justify-center gap-2 hover:bg-slate-200 rounded-full'>
               <IoLocationOutline size={24} />
               <select
                 value={selectedLocation}
@@ -38,7 +38,7 @@ const Search = () => {
                 className='text-sm md:text-base px-2 py-1 focus:border-none outline-none bg-transparent rounded-full'
               >
                 <option value='' disabled>
-                  Select A Location
+                  <span className='hidden md:flex'>Select A </span>Location
                 </option>
                 {locations.map((location, index) => (
                   <option key={index} value={location.location}>
