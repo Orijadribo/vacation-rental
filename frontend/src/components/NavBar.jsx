@@ -8,6 +8,7 @@ const NavBar = ({ setIsLogin }) => {
   const [pages, setPages] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
 
+  //To rerender the UI when a user scrolls the page
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -61,7 +62,7 @@ const NavBar = ({ setIsLogin }) => {
                 className={`border-2 ${
                   !scrolled
                     ? 'border-white hover:border-2 hover:bg-white/50 hover:text-black'
-                    : 'border-slate-500 hover:border-2 hover:bg-slate-500'
+                    : 'border-slate-500 hover:border-2 hover:bg-slate-500/50 hover:text-white'
                 } px-4 py-2 rounded-md`}
                 onClick={() => {
                   setIsLogin(true);
