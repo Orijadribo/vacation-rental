@@ -48,16 +48,16 @@ const Search = () => {
               </select>
             </div>
             <div className='hidden lg:block w-[2px] h-[30px] bg-gray-300'></div>
-            <div className='px-4 py-2 hidden lg:flex items-center justify-center md:gap-4 hover:bg-slate-200 rounded-full'>
-              <IoCalendarOutline size={24} />
-              <div className='w-[100px]'>
+            <div className='px-4 py-2 hidden lg:flex items-center justify-center md:gap-1 hover:bg-slate-200 rounded-full'>
+              <div className='font-thin'><IoCalendarOutline size={24} /></div>
+              <div className='w-[120px]'>
                 <DatePicker
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   selectsStart
                   startDate={startDate}
                   endDate={endDate}
-                  className='px-2 rounded-lg bg-transparent w-full'
+                  className='px-2 rounded-lg bg-transparent w-full outline-none border-none'
                   placeholderText='Check-in'
                 />
               </div>
@@ -70,7 +70,7 @@ const Search = () => {
                   startDate={startDate}
                   endDate={endDate}
                   minDate={startDate}
-                  className='px-2 rounded-lg bg-transparent w-full'
+                  className='px-2 rounded-lg bg-transparent w-full outline-none border-none'
                   placeholderText='Check-out'
                 />
               </div>
