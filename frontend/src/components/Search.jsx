@@ -49,7 +49,9 @@ const Search = () => {
             </div>
             <div className='hidden lg:block w-[2px] h-[30px] bg-gray-300'></div>
             <div className='px-4 py-2 hidden lg:flex items-center justify-center md:gap-1 hover:bg-slate-200 rounded-full'>
-              <div className='font-thin'><IoCalendarOutline size={24} /></div>
+              <div className='font-thin'>
+                <IoCalendarOutline size={24} />
+              </div>
               <div className='w-[120px]'>
                 <DatePicker
                   selected={startDate}
@@ -70,16 +72,16 @@ const Search = () => {
                   startDate={startDate}
                   endDate={endDate}
                   minDate={startDate}
-                  className='px-2 rounded-lg bg-transparent w-full outline-none border-none'
+                  className='ml-5 px-2 rounded-lg bg-transparent w-full outline-none border-none'
                   placeholderText='Check-out'
                 />
               </div>
             </div>
             <div className='hidden lg:block w-[2px] h-[30px] bg-gray-300'></div>
-            <div className='px-4 py-1 hidden lg:flex items-center justify-center gap-2 md:gap-4 hover:bg-slate-200 rounded-full'>
+            <div className='pl-4 pr-1 py-1 hidden lg:flex items-center justify-center gap-2 md:gap-4 hover:bg-slate-200 rounded-full'>
               <IoPeopleOutline size={24} />
               <p className='text-sm md:text-base'>Guests</p>
-              <div className='flex items-center justify-center gap-5'>
+              <div className='flex items-center justify-center gap-3'>
                 <div
                   className='cursor-pointer hover:bg-gray-800/50 rounded-full p-2'
                   onClick={subtractGuest}
