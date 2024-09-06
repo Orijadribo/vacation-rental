@@ -143,7 +143,7 @@ const NavBar = ({ setIsLogin }) => {
             className='flex items-center justify-center flex-1 md:hidden '
             onClick={toggleMobileMenu}
           >
-            <button className='border border-white p-4 rounded-full hover:bg-white hover:text-black'>
+            <button className='border-2 border-white p-4 rounded-full text-white hover:bg-white hover:text-black'>
               {isMobileMenuOpen && <FaTimes size={24} />}
             </button>
           </div>
