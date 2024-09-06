@@ -32,44 +32,44 @@ const NavBar = ({ setIsLogin }) => {
           <div className='flex items-center justify-center space-x-4'>
             <Link
               to='/'
-              className='hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
+              className='group hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
             >
               <div onClick={() => setPages('home')}>Home</div>
               <div
-                className={`m-auto w-[80%] h-[2px] rounded-full ${
-                  scrolled ? 'bg-black shadow-md' : 'bg-white'
+                className={`m-auto w-[80%] h-[2px] rounded-full group-hover:bg-white ${
+                  scrolled ? 'bg-black' : 'bg-white'
                 } ${pages === 'home' ? 'block' : 'hidden'}`}
               ></div>
             </Link>
             <Link
               to='/about'
-              className='hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
+              className='group hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
             >
               <div onClick={() => setPages('aboutus')}>About Us</div>
               <div
-                className={`m-auto w-[80%] h-[2px] rounded-full ${
+                className={`m-auto w-[80%] h-[2px] rounded-full group-hover:bg-white ${
                   scrolled ? 'bg-black shadow-md' : 'bg-white'
                 } ${pages === 'aboutus' ? 'block' : 'hidden'}`}
               ></div>
             </Link>
             <Link
               to='/properties'
-              className='hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
+              className='group hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
             >
               <div onClick={() => setPages('properties')}>Properties</div>
               <div
-                className={`m-auto w-[80%] h-[2px] rounded-full ${
+                className={`m-auto w-[80%] h-[2px] rounded-full group-hover:bg-white ${
                   scrolled ? 'bg-black shadow-md' : 'bg-white'
                 } ${pages === 'properties' ? 'block' : 'hidden'}`}
               ></div>
             </Link>
             <Link
               to='/contact'
-              className='hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
+              className='group hover:bg-slate-600 hover:text-white px-4 py-2 rounded-md'
             >
               <div onClick={() => setPages('contactus')}>Contact Us</div>
               <div
-                className={`m-auto w-[80%] h-[2px] rounded-full ${
+                className={`m-auto w-[80%] h-[2px] rounded-full group-hover:bg-white ${
                   scrolled ? 'bg-black shadow-md' : 'bg-white'
                 } ${pages === 'contactus' ? 'block' : 'hidden'}`}
               ></div>
