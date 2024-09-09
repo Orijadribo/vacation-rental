@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { HiBars3 } from 'react-icons/hi2';
 
@@ -7,6 +7,8 @@ const NavBar = ({ setIsLogin }) => {
   const [scrolled, setScrolled] = useState(false);
   const [pages, setPages] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
+
+  const location = useLocation();
 
   //To rerender the UI when a user scrolls the page
   useEffect(() => {
@@ -23,6 +25,17 @@ const NavBar = ({ setIsLogin }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
+
+  useEffect(() => {
+    // Set the pages state based on the current path
+    const currentPath = location.pathname; // Get the current path
+    const decodedPath = decodeURIComponent(currentPath); // Decode the URL
+    if (decodedPath === '/') {
+      setPages('home');
+    } else {
+      setPages(decodedPath.replace('/', '')); // Remove leading slash
+    }
+  }, [location]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
