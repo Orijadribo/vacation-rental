@@ -10,6 +10,7 @@ import Locations from './pages/Locations';
 import Location from './pages/Location';
 import LoginSignUp from './pages/LoginSignUp';
 import { useState } from 'react';
+import NewsLetter from './components/NewsLetter';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <Route path='/locations' element={<Locations />} />
           <Route path='/locations/:locationId' element={<Location />} />
         </Routes>
+        <NewsLetter/>
         <Footer />
       </div>
     </Router>

@@ -27,19 +27,19 @@ const About = () => {
             <h2 className='text-5xl font-thin mb-2'>Our Values</h2>
             <ul className='list-disc list-inside mb-4'>
               <li>
-                Integrity: We uphold the highest standards of honesty and
+                <strong>Integrity:</strong> We uphold the highest standards of honesty and
                 transparency.
               </li>
               <li>
-                Customer Focus: Our clients are at the heart of everything we
+                <strong>Customer Focus:</strong> Our clients are at the heart of everything we
                 do.
               </li>
               <li>
-                Excellence: We are committed to delivering the best results for
+                <strong>Excellence:</strong> We are committed to delivering the best results for
                 our clients.
               </li>
               <li>
-                Innovation: We embrace new ideas and technologies to improve our
+                <strong>Innovation:</strong> We embrace new ideas and technologies to improve our
                 services.
               </li>
             </ul>
