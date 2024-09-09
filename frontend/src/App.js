@@ -20,9 +20,9 @@ function App() {
         <NavBar setIsLogin={setIsLogin} />
         <Routes>
           <Route index path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/about us' element={<About />} />
           <Route path='/properties' element={<Properties />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/contact us' element={<Contact />} />
           <Route path='/login' element={<LoginSignUp isLogin={isLogin} />} />
           <Route path='/signup' element={<LoginSignUp isLogin={isLogin} />} />
           <Route path='/properties/:id' element={<PropertyDetails />} />
