@@ -15,7 +15,7 @@ const PropertyLocations = () => {
               traveler
             </p>
           </div>
-          <div className='w-80'>
+          <div className='hidden md:flex w-80'>
             <img
               src={locations[0].image}
               alt={locations[0].location}
